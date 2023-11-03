@@ -13,7 +13,7 @@ const Filters = () => {
   };
 
   const initialValues = {
-    range: [50, 75],
+    range: [150, 50000],
     categories: [],
   };
 
@@ -47,6 +47,8 @@ const Filters = () => {
         <Slider
           getAriaLabel={() => "price range"}
           value={values.range}
+          min={100}
+          max={100000}
           onChange={handleChange}
           valueLabelDisplay="auto"
         />

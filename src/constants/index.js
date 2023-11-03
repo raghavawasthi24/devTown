@@ -4,7 +4,7 @@ export const products = [
     id: 1,
     title: "iPhone 9",
     description: "An apple mobile which is nothing like apple",
-    price: 549,
+    price: 5490,
     category: "Furniture",
     thumbnail: "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
     images: [
@@ -18,6 +18,7 @@ export const products = [
   {
     id: 2,
     title: "iPhone X",
+    price: 9990,
     description:
       "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
     category: "Electronics",
@@ -34,7 +35,7 @@ export const products = [
     title: "Samsung Universe 9",
     description:
       "Samsung's new variant which goes beyond Galaxy to the Universe",
-    price: 1249,
+    price: 12490,
     category: "smartphones",
     thumbnail: "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
     images: ["https://i.dummyjson.com/data/products/3/1.jpg"],
@@ -43,8 +44,8 @@ export const products = [
     id: 4,
     title: "OPPOF19",
     description: "OPPO F19 is officially announced on April 2021.",
-    price: 280,
-    category: "smartphones",
+    price: 10000,
+    category: "Smartphones",
     thumbnail: "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/4/1.jpg",
@@ -59,8 +60,8 @@ export const products = [
     title: "Huawei P30",
     description:
       "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
-    price: 49,
-    category: "smartphones",
+    price: 49865,
+    category: "Sartphones",
     thumbnail: "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/5/1.jpg",
@@ -73,8 +74,8 @@ export const products = [
     title: "MacBook Pro",
     description:
       "MacBook Pro 2021 with mini-LED display may launch between September, November",
-    price: 19,
-    category: "laptops",
+    price: 19568,
+    category: "Laptops",
     thumbnail: "https://i.dummyjson.com/data/products/6/thumbnail.png",
     images: [
       "https://i.dummyjson.com/data/products/6/1.png",
@@ -88,8 +89,8 @@ export const products = [
     title: "Samsung Galaxy Book",
     description:
       "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
-    price: 49,
-    category: "laptops",
+    price: 49797,
+    category: "Laptops",
     thumbnail: "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/7/1.jpg",
@@ -103,8 +104,8 @@ export const products = [
     title: "Microsoft Surface Laptop 4",
     description:
       "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
-    price: 29,
-    category: "laptops",
+    price: 29757,
+    category: "Laptops",
     thumbnail: "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/8/1.jpg",
@@ -119,8 +120,8 @@ export const products = [
     title: "Infinix INBOOK",
     description:
       "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
-    price: 1099,
-    category: "laptops",
+    price: 999,
+    category: "Laptops",
     thumbnail: "https://i.dummyjson.com/data/products/9/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/9/1.jpg",
@@ -135,8 +136,8 @@ export const products = [
     title: "HP Pavilion 15-DK1056WM",
     description:
       "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
-    price: 1099,
-    category: "laptops",
+    price: 8999,
+    category: "Laptops",
     thumbnail: "https://i.dummyjson.com/data/products/10/thumbnail.jpeg",
     images: [
       "https://i.dummyjson.com/data/products/10/1.jpg",
@@ -150,9 +151,9 @@ export const products = [
 //list of categories
 
 export const categories = [
-  "Shoes",
+  "Smartphones",
   "Bags",
-  "Watches",
+  "Laptops",
   "Clothes",
   "Accessories",
   "Electronics",
