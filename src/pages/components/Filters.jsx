@@ -4,7 +4,7 @@ import Checkbox from "../../styledComponents/Checkbox";
 import Button from "../../styledComponents/Button";
 import Slider from "@mui/material/Slider";
 import { useDispatch } from "react-redux";
-import { applyFilter } from "../../store/slices/filterSlice";
+import { applyFilter, toggleValue } from "../../store/slices/filterSlice";
 
 const Filters = () => {
   //chnage the range value
@@ -41,37 +41,39 @@ const Filters = () => {
   };
 
   return (
-    <div className="p-6 flex flex-col gap-6">
-      <div>
-        <p className="text-gray-500 font-bold">PRICE RANGE</p>
-        <Slider
-          getAriaLabel={() => "price range"}
-          value={values.range}
-          min={100}
-          max={100000}
-          onChange={handleChange}
-          valueLabelDisplay="auto"
-        />
+    <div className="absolute w-1/2 md:w-full top-0 z-10 md:relative bg-white md:bg-transparent md:shadow h-screen">
+      <div className="p-6 flex flex-col gap-6">
+        <div>
+          <p className="text-gray-500 font-bold">PRICE RANGE</p>
+          <Slider
+            getAriaLabel={() => "price range"}
+            value={values.range}
+            min={100}
+            max={100000}
+            onChange={handleChange}
+            valueLabelDisplay="auto"
+          />
+        </div>
+        <div>
+          <p className="text-gray-500 font-bold">CATEGORIES</p>
+          {categories.map((category, key) => {
+            return (
+              <div className="flex items-center" key={key}>
+                <Checkbox
+                  type="checkbox"
+                  className="mr-2"
+                  name={category}
+                  onChange={updateChange}
+                />
+                <p>{category}</p>
+              </div>
+            );
+          })}
+        </div>
+        <Button className="mt-4" onClick={()=>{applyFilters,dispatch(toggleValue())}}>
+          APPLY
+        </Button>
       </div>
-      <div>
-        <p className="text-gray-500 font-bold">CATEGORIES</p>
-        {categories.map((category, key) => {
-          return (
-            <div className="flex items-center" key={key}>
-              <Checkbox
-                type="checkbox"
-                className="mr-2"
-                name={category}
-                onChange={updateChange}
-              />
-              <p>{category}</p>
-            </div>
-          );
-        })}
-      </div>
-      <Button className="mt-4" onClick={applyFilters}>
-        APPLY
-      </Button>
     </div>
   );
 };

@@ -4,6 +4,7 @@ import { products } from "../../constants";
 const initialState = {
   productList: products,
   filteredProductList: products,
+  open:false
 };
 
 const FilterSlice = createSlice({
@@ -24,8 +25,12 @@ const FilterSlice = createSlice({
       }
       console.log(state.filteredProductList)
     },
+    toggleValue:(state,action)=>{
+      state.open = !state.open
+      console.log(state.open)
+    }
   },
 });
 
 export default FilterSlice.reducer;
-export const { applyFilter } = FilterSlice.actions;
+export const { applyFilter, toggleValue } = FilterSlice.actions;
