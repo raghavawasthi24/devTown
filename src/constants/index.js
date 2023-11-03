@@ -4,7 +4,7 @@ export const products = [
         "title": "iPhone 9",
         "description": "An apple mobile which is nothing like apple",
         "price": 549,
-        "category": "smartphones",
+        "category": "Furniture",
         "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
         "images": [
           "https://i.dummyjson.com/data/products/1/1.jpg",
@@ -18,7 +18,7 @@ export const products = [
         "id": 2,
         "title": "iPhone X",
         "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
-        "category": "smartphones",
+        "category": "Electronics",
         "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
         "images": [
           "https://i.dummyjson.com/data/products/2/1.jpg",

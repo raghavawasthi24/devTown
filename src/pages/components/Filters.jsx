@@ -5,10 +5,11 @@ import Checkbox from "../../styledComponents/Checkbox";
 import Button from "../../styledComponents/Button";
 import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
+import { useDispatch } from "react-redux";
+import { applyFilter } from "../../store/slices/filterSlice";
+// import { applyFilter } from "../../redux/slices/filters";
 
-function valuetext(value) {
-  return `${value}°C`;
-}
+
 
 const Filters = () => {
   const handleChange = (event, newValue) => {
@@ -21,6 +22,7 @@ const Filters = () => {
   };
 
   const [values, setValues] = React.useState(initialValues);
+  const dispatch = useDispatch();
 
   const updateChange = (e) => {
     const { name, checked } = e.target;
@@ -38,7 +40,8 @@ const Filters = () => {
   };
 
   const applyFilters = () => {
-    console.log(values);
+    // console.log(values);
+    dispatch(applyFilter(values))
   };
 
   return (
@@ -46,18 +49,17 @@ const Filters = () => {
       <div>
         <p className="text-gray-500 font-bold">PRICE RANGE</p>
         <Slider
-          getAriaLabel={() => "Temperature range"}
+          getAriaLabel={() => "price range"}
           value={values.range}
           onChange={handleChange}
           valueLabelDisplay="auto"
-          getAriaValueText={valuetext}
         />
       </div>
       <div>
         <p className="text-gray-500 font-bold">CATEGORIES</p>
-        {categories.map((category) => {
+        {categories.map((category,key) => {
           return (
-            <div className="flex items-center">
+            <div className="flex items-center" key={key}>
               <Checkbox
                 type="checkbox"
                 className="mr-2"

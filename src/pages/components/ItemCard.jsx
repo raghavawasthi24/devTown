@@ -2,7 +2,7 @@ import React from "react";
 import Card from "../../styledComponents/Card";
 
 const ItemCard = ({img,title, price, description}) => {
-    console.log(title,price,description)
+    // console.log(title,price,description)
   return (
     <Card>
       <img
