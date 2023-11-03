@@ -41,7 +41,7 @@ const Filters = () => {
   };
 
   return (
-    <div className="absolute w-1/2 md:w-full top-0 z-10 md:relative bg-white md:bg-transparent md:shadow h-screen">
+    <div className="absolute w-1/2 md:w-full top-0 z-10 md:relative bg-white md:bg-transparent shadow h-full">
       <div className="p-6 flex flex-col gap-6">
         <div>
           <p className="text-gray-500 font-bold">PRICE RANGE</p>

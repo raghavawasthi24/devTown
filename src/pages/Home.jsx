@@ -34,7 +34,7 @@ const Home = () => {
             Apply Filter
           </Button>
         </div>
-        <div className="w-full md:w-3/4 flex flex-wrap flex-1">
+        <div className="w-full md:w-3/4 flex justify-center flex-wrap flex-1">
           {filteredProducts.map((product, key) => {
             // console.log(product);
             return (
