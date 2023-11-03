@@ -139,3 +139,16 @@ export const products = [
         ]
       }
 ]
+
+
+
+
+export const categories = [
+  "Shoes",
+  "Bags",
+  "Watches",
+  "Clothes",
+  "Accessories",
+  "Electronics",
+  "Furniture"
+]

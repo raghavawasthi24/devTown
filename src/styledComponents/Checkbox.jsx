@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Checkbox = styled.checkbox`
+const Checkbox = styled.input`
 
 `
 
