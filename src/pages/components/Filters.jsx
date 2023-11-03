@@ -1,29 +1,26 @@
 import React from "react";
-import RangeSelector from "../../styledComponents/RangeSelector";
 import { categories } from "../../constants";
 import Checkbox from "../../styledComponents/Checkbox";
 import Button from "../../styledComponents/Button";
-import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
 import { useDispatch } from "react-redux";
 import { applyFilter } from "../../store/slices/filterSlice";
-// import { applyFilter } from "../../redux/slices/filters";
-
-
 
 const Filters = () => {
+  //chnage the range value
   const handleChange = (event, newValue) => {
     setValues({ ...values, range: newValue });
   };
 
   const initialValues = {
-    range: [50,75],
+    range: [50, 75],
     categories: [],
   };
 
   const [values, setValues] = React.useState(initialValues);
   const dispatch = useDispatch();
 
+  //update the categories
   const updateChange = (e) => {
     const { name, checked } = e.target;
     if (checked) {
@@ -40,8 +37,7 @@ const Filters = () => {
   };
 
   const applyFilters = () => {
-    // console.log(values);
-    dispatch(applyFilter(values))
+    dispatch(applyFilter(values));
   };
 
   return (
@@ -57,7 +53,7 @@ const Filters = () => {
       </div>
       <div>
         <p className="text-gray-500 font-bold">CATEGORIES</p>
-        {categories.map((category,key) => {
+        {categories.map((category, key) => {
           return (
             <div className="flex items-center" key={key}>
               <Checkbox
@@ -79,5 +75,3 @@ const Filters = () => {
 };
 
 export default Filters;
-
-5;
