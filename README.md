@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-To get started with the Book Directory API, follow these steps:
+To get started with this project, follow these steps:
 
 1. Clone the repository to your local machine.
 
