@@ -70,7 +70,7 @@ const Filters = () => {
             );
           })}
         </div>
-        <Button className="mt-4" onClick={()=>{applyFilters,dispatch(toggleValue())}}>
+        <Button className="mt-4" onClick={()=>{applyFilters(),dispatch(toggleValue())}}>
           APPLY
         </Button>
       </div>
