@@ -71,14 +71,14 @@ export const products = [
   },
   {
     id: 6,
-    title: "MacBook Pro",
+    title: "Comfort Chair",
     description:
-      "MacBook Pro 2021 with mini-LED display may launch between September, November",
+      "Best chair to relax you may launch between September, November",
     price: 19568,
-    category: "Laptops",
+    category: "Furniture",
     thumbnail: "https://i.dummyjson.com/data/products/6/thumbnail.png",
     images: [
-      "https://i.dummyjson.com/data/products/6/1.png",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZw2DDi4ahjEmQoobXE39iYoVPvPeAfmpq1g&usqp=CAU",
       "https://i.dummyjson.com/data/products/6/2.jpg",
       "https://i.dummyjson.com/data/products/6/3.png",
       "https://i.dummyjson.com/data/products/6/4.jpg",

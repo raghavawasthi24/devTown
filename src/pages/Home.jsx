@@ -35,7 +35,8 @@ const Home = () => {
           </Button>
         </div>
         <div className="w-full md:w-3/4 flex justify-center flex-wrap flex-1">
-          {filteredProducts.map((product, key) => {
+          {filteredProducts.length!=0?
+          filteredProducts.map((product, key) => {
             // console.log(product);
             return (
               <ItemCard
@@ -43,10 +44,15 @@ const Home = () => {
                 img={product.images[0]}
                 title={product.title}
                 price={product.price}
+                category={product.category}
                 description={product.description}
               />
+            
             );
-          })}
+          })
+        :
+        <p>No Item Found!</p>
+        }
         </div>
       </div>
     </div>
